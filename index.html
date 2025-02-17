@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <link id="theme-switch" rel="stylesheet" href="./css/styles.css">
+
+    <title>Frontend quiz app</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="logo-container">
+                <div class="logo accessibility-bg">
+                    <img src="./assets/images/icon-accessibility.svg" alt="accessibility icon">
+                </div>
+                <span>Accessibility</span>
+            </div>
+            <div class="theme">
+                <img id="sun" src="./assets/images/icon-sun-dark.svg" alt="sun dark icon">
+                <label class="toggleButton">
+                    <input type="checkbox" class="toggleButton__checkbox" id="switch" />
+                </label>
+                <img id="moon" src="./assets/images/icon-moon-dark.svg" alt="moon dark icon">
+            </div>
+        </header>
+
+        <!--       menu-->
+        <section class="subject-container">
+            <div class="group1">
+                <h1>
+                    Welcome to the <br><strong>Frontend Quiz!</strong>
+                </h1>
+                <p class="instruction">Pick a subject to get started.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li id="html">
+                        <div class="logo html-bg"><img src="./assets/images/icon-html.svg" alt="html icon"></div>HTML
+                    </li>
+                    <li id="css">
+                        <div class="logo css-bg"><img src="./assets/images/icon-css.svg" alt="css icon"></div>CSS
+                    </li>
+                    <li id="js">
+                        <div class="logo js-bg"><img src="./assets/images/icon-js.svg" alt="js icon"></div>JavaScript
+                    </li>
+                    <li id="accessibility">
+                        <div class="logo accessibility-bg"><img src="./assets/images/icon-accessibility.svg" alt="accessibility icon"></div>Accessibility
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <!--        question-->
+        <section class="question-container">
+            <div class="group1">
+                <p class="instruction question-number">Question 6 of 10</p>
+                <h2 id="question">Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?</h2>
+                <div class="countdown-container">
+                    <div id="countdown"></div>
+                </div>
+            </div>
+            <div class="group2">
+                <ul id="res-list">
+                    <li>
+                        <div class="res-item"><span>A</span></div>HTML
+                        <img src="./assets/images/icon-correct.svg" alt="correct icon">
+                        <img src="./assets/images/icon-error.svg" alt="error icon">
+                    </li>
+                    <li>
+                        <div class="res-item"><span>B</span></div>HTML
+                        <img src="./assets/images/icon-correct.svg" alt="correct icon">
+                        <img src="./assets/images/icon-error.svg" alt="error icon">
+                    </li>
+                    <li>
+                        <div class="res-item"><span>C</span></div>HTML
+                        <img src="./assets/images/icon-correct.svg" alt="correct icon">
+                        <img src="./assets/images/icon-error.svg" alt="error icon">
+                    </li>
+                    <li>
+                        <div class="res-item"><span>D</span></div>HTML
+                        <img src="./assets/images/icon-correct.svg" alt="correct icon">
+                        <img src="./assets/images/icon-error.svg" alt="error icon">
+                    </li>
+                </ul>
+
+                <button id="submited-answer">Submit Answer</button>
+                <span class="error-msg"><img src="./assets/images/icon-error.svg" alt="error icon">Please select an answer</span>
+            </div>
+        </section>
+
+        <!--       quiz completed-->
+        <section class="quiz-completed">
+            <h3>
+                Quiz completed<br>
+                <strong>You scored...</strong>
+            </h3>
+            <div class="group2">
+                <div class="score-container">
+                    <div class="logo-container-score">
+                        <div class="logo accessibility-bg">
+                            <img src="./assets/images/icon-accessibility.svg" alt="accessibility icon">
+                        </div>
+                        <span>Accessibility</span>
+                    </div>
+                    <div class="score">8</div>
+                    <div class="max-score">out of 10</div>
+                </div>
+                <button id="play-again">Play Again</button>
+            </div>
+        </section>
+    </main>
+    <script src="./js/theme-switch.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

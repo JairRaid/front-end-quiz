@@ -1,0 +1,14 @@
+{
+    "name": "front-end-quiz",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "type": "module",
+        "sass": "sass --watch scss/main.scss:css/styles.css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "RAKOTONIRAINY Rija Jean Yves",
+    "license": "ISC",
+    "description": ""
+}
