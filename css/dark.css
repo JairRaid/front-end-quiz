@@ -388,7 +388,7 @@ button {
     }
 
     .subject-container {
-        padding: 49px 64px 0 64px;
+        padding: 49px 64px 50px 64px;
     }
 
     .logo-container {
@@ -559,7 +559,7 @@ button {
     .subject-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 85px 64px 0 64px;
+        padding: 85px 64px 100px 64px;
     }
 
     .logo-container {
